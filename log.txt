@@ -1,0 +1,10 @@
+2023-05-11 21:24:06 DEBUG main.cpp:7 name is log system
+2023-05-11 21:24:06 INFO main.cpp:8 name is log system
+2023-05-11 21:24:06 WARN main.cpp:9 name is log system
+2023-05-11 21:24:06 ERROR main.cpp:10 name is log system
+2023-05-11 21:24:06 FATAL main.cpp:11 name is log system
+2023-05-11 21:24:06 DEBUG main.cpp:13 log system
+2023-05-11 21:24:06 INFO main.cpp:14 log system
+2023-05-11 21:24:06 WARN main.cpp:15 log system
+2023-05-11 21:24:06 ERROR main.cpp:16 log system
+2023-05-11 21:24:06 FATAL main.cpp:17 log system

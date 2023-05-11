@@ -29,7 +29,7 @@ namespace utility
 {
 class Logger{
 public:
-    //ÈÕÖ¾¼¶±ğ
+    //æ—¥å¿—çº§åˆ«
     enum Level{
         DEBUG = 0,
         INFO,
@@ -49,7 +49,7 @@ public:
 
     void level(Level level);
 
-    void max(int bytes);
+    void set_size(int bytes);
 
 private:
     Logger();
@@ -59,23 +59,24 @@ private:
     void rotate();
 
 private:
-    //ÎÄ¼şÃû
+    //æ–‡ä»¶å
     std::string m_filename;
     
-    //Êä³öÁ÷
+    //è¾“å‡ºæµ
     std::ofstream m_fout;    
     
-    //±£´æÈÕÖ¾µÈ¼¶
+    //ä¿å­˜æ—¥å¿—ç­‰çº§
     static const char* m_levels[LEVEL_COUNT];
 
-    //ÈÕÖ¾µÈ¼¶
+    //æ—¥å¿—ç­‰çº§
     Level m_level;
 
-    //ÈÕÖ¾ÎÄ¼ş´óĞ¡
+    //æ—¥å¿—æ–‡ä»¶å¤§å°
     int m_file_size;
 
-    //µ¥¸öÈÕÖ¾´óĞ¡
+    //å•ä¸ªæ—¥å¿—å¤§å°
     int m_max_size;
+
 };
       
 } 

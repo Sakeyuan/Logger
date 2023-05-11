@@ -8,7 +8,8 @@ const char* Logger::m_levels[Logger::LEVEL_COUNT]{
     "FATAL"
 };
 
-Logger::Logger():m_level(DEBUG),m_max_size(0),m_file_size(0){
+//é»˜è®¤æ—¥å¿—æ–‡ä»¶å¤§å°ä¸º10M
+Logger::Logger():m_level(DEBUG),m_max_size(10*1024*1024),m_file_size(0){
 
 }
 
@@ -16,7 +17,7 @@ Logger::~Logger(){
     this->close();
 }
 
-//C++11¾Ö²¿¾²Ì¬±äÁ¿Ïß³Ì°²È«
+//C++11å±€éƒ¨é™æ€å˜é‡çº¿ç¨‹å®‰å…¨
 Logger* Logger::instance(){
     static Logger m_instance;
     return &m_instance;
@@ -28,7 +29,7 @@ void Logger::open(const std::string& filename){
     if(m_fout.fail()){
         throw std::logic_error("open file failed"+filename);
     }
-    //»ñÈ¡ÎÄ¼ş´óĞ¡
+    //è·å–æ–‡ä»¶å¤§å°
     m_fout.seekp(0,std::ios::end);
     m_file_size = m_fout.tellp();
 }
@@ -43,9 +44,9 @@ void Logger::level(Level level){
 /**
  * @brief 
  * 
- * @param level ÈÕÖ¾¼¶±ğ
- * @param file ÎÄ¼şÃû³Æ
- * @param line ĞĞ
+ * @param level æ—¥å¿—çº§åˆ«
+ * @param file æ–‡ä»¶åç§°
+ * @param line è¡Œ
  * @param format 
  * @param ... 
  */
@@ -61,11 +62,11 @@ void Logger::log(Level level, const char* file,int line,const char* format,...){
     char time_buf[32];
     memset(&time_buf,0,sizeof(time_buf));
     
-    //¸ñÊ½»¯Ê±¼ä´æ´¢µ½time_bufÖĞ
+    //æ ¼å¼åŒ–æ—¶é—´å­˜å‚¨åˆ°time_bufä¸­
     strftime(time_buf, sizeof(time_buf),"%Y-%m-%d %H:%M:%S", ptm);
 
     const char* fmt = "%s %s %s:%d ";
-    //»ñÈ¡×Ö·û³¤¶È
+    //è·å–å­—ç¬¦é•¿åº¦
     int size = snprintf(NULL,0,fmt,time_buf,m_levels[level],file,line);
 
     if(size > 0){
@@ -80,7 +81,7 @@ void Logger::log(Level level, const char* file,int line,const char* format,...){
     
     va_list arg_ptr;
     va_start(arg_ptr,format);
-    //»ñÈ¡×Ö·û³¤¶È
+    //è·å–å­—ç¬¦é•¿åº¦
     size = vsnprintf(NULL,0,format,arg_ptr); 
     va_end(arg_ptr);
     if(size > 0){
@@ -94,27 +95,28 @@ void Logger::log(Level level, const char* file,int line,const char* format,...){
         delete []content;
     }
     m_fout << "\n";
-    //Ğ´Èë´ÅÅÌ
+    //å†™å…¥ç£ç›˜
     m_fout.flush();
     if(m_max_size > 0 && m_file_size > m_max_size){
         rotate();
     }
 }
 
-void Logger::max(int bytes){
+void Logger::set_size(int bytes){
     m_max_size = bytes;
 }
 
 void Logger::rotate(){
-    //¹Ø±ÕÒÔÇ°µÄÎÄ¼ş
+    //å…³é—­ä»¥å‰çš„æ–‡ä»¶
     close();
     time_t ticks = time(NULL);
     struct tm* ptm = localtime(&ticks);
     char time_buf[32];
     memset(&time_buf,0,sizeof(time_buf));
     
-    //¸ñÊ½»¯Ê±¼ä´æ´¢µ½time_bufÖĞ
+    //æ ¼å¼åŒ–æ—¶é—´å­˜å‚¨åˆ°time_bufä¸­
     strftime(time_buf, sizeof(time_buf),"%Y_%m_%d %H_%M_%S_", ptm);
+    //æ¯«ç§’çº§åˆ«
     struct timeval tv;
     gettimeofday(&tv, NULL);
     char ms_buf[4];
