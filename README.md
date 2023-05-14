@@ -1,5 +1,5 @@
 # 日志系统
 
-  logger1为轻量级
+  logger1 轻量级
   
-  logger2框架级
+  logger2 框架级
