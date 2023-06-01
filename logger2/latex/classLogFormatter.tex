@@ -1,0 +1,74 @@
+\hypertarget{classLogFormatter}{}\doxysection{Log\+Formatter Class Reference}
+\label{classLogFormatter}\index{LogFormatter@{LogFormatter}}
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+
+
+Collaboration diagram for Log\+Formatter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classLogFormatter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classLogFormatter_1_1FormatItem}{Format\+Item}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogFormatter}{Log\+Formatter}} $>$ \mbox{\hyperlink{classLogFormatter_abca412d06e3741ef384f414533636723}{ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classLogFormatter_a3b681c44443e8454b47d275551b2939f}{format}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogger}{Logger}} $>$logger, \mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} level, \mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}} event)
+\item 
+\mbox{\hyperlink{classLogFormatter_aeb680cf8dd5c45776a7db0ba2ef503b7}{Log\+Formatter}} (const std\+::string \&pattern)
+\item 
+void \mbox{\hyperlink{classLogFormatter_ae2c44f210e8660cc9000a97dd7c646f5}{init}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classLogFormatter_abca412d06e3741ef384f414533636723}\label{classLogFormatter_abca412d06e3741ef384f414533636723}} 
+\index{LogFormatter@{LogFormatter}!ptr@{ptr}}
+\index{ptr@{ptr}!LogFormatter@{LogFormatter}}
+\doxysubsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classLogFormatter}{Log\+Formatter}}$>$ \mbox{\hyperlink{classLogFormatter_abca412d06e3741ef384f414533636723}{Log\+Formatter\+::ptr}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogFormatter_aeb680cf8dd5c45776a7db0ba2ef503b7}\label{classLogFormatter_aeb680cf8dd5c45776a7db0ba2ef503b7}} 
+\index{LogFormatter@{LogFormatter}!LogFormatter@{LogFormatter}}
+\index{LogFormatter@{LogFormatter}!LogFormatter@{LogFormatter}}
+\doxysubsubsection{\texorpdfstring{LogFormatter()}{LogFormatter()}}
+{\footnotesize\ttfamily Log\+Formatter\+::\+Log\+Formatter (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pattern }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogFormatter_a3b681c44443e8454b47d275551b2939f}\label{classLogFormatter_a3b681c44443e8454b47d275551b2939f}} 
+\index{LogFormatter@{LogFormatter}!format@{format}}
+\index{format@{format}!LogFormatter@{LogFormatter}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily std\+::string Log\+Formatter\+::format (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogger}{Logger}} $>$}]{logger,  }\item[{\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}}}]{level,  }\item[{\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}}}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLogFormatter_ae2c44f210e8660cc9000a97dd7c646f5}\label{classLogFormatter_ae2c44f210e8660cc9000a97dd7c646f5}} 
+\index{LogFormatter@{LogFormatter}!init@{init}}
+\index{init@{init}!LogFormatter@{LogFormatter}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Log\+Formatter\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+m -- 消息体 p -- level r -- 启动后的时间 c -- 日志名称 t -- 线程\+Id n -- 回车 d -- 时间 f -- 文件名 l -- 行号 T -- Tab 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{log_8h}{log.\+h}}\item 
+src/\mbox{\hyperlink{log_8cpp}{log.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{classLogAppender}{}\doxysection{Log\+Appender Class Reference}
+\label{classLogAppender}\index{LogAppender@{LogAppender}}
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+
+
+Inheritance diagram for Log\+Appender\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classLogAppender__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Log\+Appender\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classLogAppender__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogAppender}{Log\+Appender}} $>$ \mbox{\hyperlink{classLogAppender_ab419fa61f5240ea0d3cdf4e0f97e03c0}{ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classLogAppender_a9fc358bd9985829972f392d9cc74acc6}{$\sim$\+Log\+Appender}} ()
+\item 
+virtual void \mbox{\hyperlink{classLogAppender_a45031a343fec289a22b4b90f6bc5ebad}{log}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogger}{Logger}} $>$logger, \mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} level, \mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}} event)=0
+\item 
+void \mbox{\hyperlink{classLogAppender_a7a93f1c9b8fa99c19ae028375f4b0047}{set\+Formater}} (\mbox{\hyperlink{classLogFormatter_abca412d06e3741ef384f414533636723}{Log\+Formatter\+::ptr}} formatter)
+\item 
+\mbox{\hyperlink{classLogFormatter_abca412d06e3741ef384f414533636723}{Log\+Formatter\+::ptr}} \mbox{\hyperlink{classLogAppender_af839679bac2fbfa8b67367d40196d464}{get\+Formatter}} () const
+\item 
+\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} \mbox{\hyperlink{classLogAppender_ace656d3e3497715a9e0d5315b0d64de4}{get\+Level}} () const
+\item 
+void \mbox{\hyperlink{classLogAppender_acc9bcce7f34349e9ee2723dabd33553b}{set\+Level}} (\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} \mbox{\hyperlink{classLogAppender_afcce7413b80544370c696f94decec860}{m\+\_\+level}} = \mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fa08e08c9e3eb556d6bbc9952a95282f9a}{Log\+Level\+::\+D\+E\+B\+UG}}
+\item 
+\mbox{\hyperlink{classLogFormatter_abca412d06e3741ef384f414533636723}{Log\+Formatter\+::ptr}} \mbox{\hyperlink{classLogAppender_a4b993bb24436217d384dfef2e0cc68a3}{m\+\_\+formatter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classLogAppender_ab419fa61f5240ea0d3cdf4e0f97e03c0}\label{classLogAppender_ab419fa61f5240ea0d3cdf4e0f97e03c0}} 
+\index{LogAppender@{LogAppender}!ptr@{ptr}}
+\index{ptr@{ptr}!LogAppender@{LogAppender}}
+\doxysubsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classLogAppender}{Log\+Appender}}$>$ \mbox{\hyperlink{classLogAppender_ab419fa61f5240ea0d3cdf4e0f97e03c0}{Log\+Appender\+::ptr}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogAppender_a9fc358bd9985829972f392d9cc74acc6}\label{classLogAppender_a9fc358bd9985829972f392d9cc74acc6}} 
+\index{LogAppender@{LogAppender}!````~LogAppender@{$\sim$LogAppender}}
+\index{````~LogAppender@{$\sim$LogAppender}!LogAppender@{LogAppender}}
+\doxysubsubsection{\texorpdfstring{$\sim$LogAppender()}{~LogAppender()}}
+{\footnotesize\ttfamily virtual Log\+Appender\+::$\sim$\+Log\+Appender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogAppender_af839679bac2fbfa8b67367d40196d464}\label{classLogAppender_af839679bac2fbfa8b67367d40196d464}} 
+\index{LogAppender@{LogAppender}!getFormatter@{getFormatter}}
+\index{getFormatter@{getFormatter}!LogAppender@{LogAppender}}
+\doxysubsubsection{\texorpdfstring{getFormatter()}{getFormatter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogFormatter_abca412d06e3741ef384f414533636723}{Log\+Formatter\+::ptr}} Log\+Appender\+::get\+Formatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogAppender_ace656d3e3497715a9e0d5315b0d64de4}\label{classLogAppender_ace656d3e3497715a9e0d5315b0d64de4}} 
+\index{LogAppender@{LogAppender}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!LogAppender@{LogAppender}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} Log\+Appender\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogAppender_a45031a343fec289a22b4b90f6bc5ebad}\label{classLogAppender_a45031a343fec289a22b4b90f6bc5ebad}} 
+\index{LogAppender@{LogAppender}!log@{log}}
+\index{log@{log}!LogAppender@{LogAppender}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily virtual void Log\+Appender\+::log (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogger}{Logger}} $>$}]{logger,  }\item[{\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}}}]{level,  }\item[{\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classFileLogAppender_ad9ad85670a9bece587e9159a03cf7105}{File\+Log\+Appender}}, and \mbox{\hyperlink{classStdoutLogAppender_a1f3d53bf8553d3022def3dca8ef868a7}{Stdout\+Log\+Appender}}.
+
+\mbox{\Hypertarget{classLogAppender_a7a93f1c9b8fa99c19ae028375f4b0047}\label{classLogAppender_a7a93f1c9b8fa99c19ae028375f4b0047}} 
+\index{LogAppender@{LogAppender}!setFormater@{setFormater}}
+\index{setFormater@{setFormater}!LogAppender@{LogAppender}}
+\doxysubsubsection{\texorpdfstring{setFormater()}{setFormater()}}
+{\footnotesize\ttfamily void Log\+Appender\+::set\+Formater (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogFormatter_abca412d06e3741ef384f414533636723}{Log\+Formatter\+::ptr}}}]{formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogAppender_acc9bcce7f34349e9ee2723dabd33553b}\label{classLogAppender_acc9bcce7f34349e9ee2723dabd33553b}} 
+\index{LogAppender@{LogAppender}!setLevel@{setLevel}}
+\index{setLevel@{setLevel}!LogAppender@{LogAppender}}
+\doxysubsubsection{\texorpdfstring{setLevel()}{setLevel()}}
+{\footnotesize\ttfamily void Log\+Appender\+::set\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLogAppender_a4b993bb24436217d384dfef2e0cc68a3}\label{classLogAppender_a4b993bb24436217d384dfef2e0cc68a3}} 
+\index{LogAppender@{LogAppender}!m\_formatter@{m\_formatter}}
+\index{m\_formatter@{m\_formatter}!LogAppender@{LogAppender}}
+\doxysubsubsection{\texorpdfstring{m\_formatter}{m\_formatter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogFormatter_abca412d06e3741ef384f414533636723}{Log\+Formatter\+::ptr}} Log\+Appender\+::m\+\_\+formatter\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classLogAppender_afcce7413b80544370c696f94decec860}\label{classLogAppender_afcce7413b80544370c696f94decec860}} 
+\index{LogAppender@{LogAppender}!m\_level@{m\_level}}
+\index{m\_level@{m\_level}!LogAppender@{LogAppender}}
+\doxysubsubsection{\texorpdfstring{m\_level}{m\_level}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} Log\+Appender\+::m\+\_\+level = \mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fa08e08c9e3eb556d6bbc9952a95282f9a}{Log\+Level\+::\+D\+E\+B\+UG}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{log_8h}{log.\+h}}\end{DoxyCompactItemize}

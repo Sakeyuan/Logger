@@ -1,0 +1,195 @@
+\hypertarget{log_8h}{}\doxysection{src/log.h File Reference}
+\label{log_8h}\index{src/log.h@{src/log.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}singleton.\+h\char`\"{}}\newline
+Include dependency graph for log.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{log_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{log_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classLogLevel}{Log\+Level}}
+\item 
+class \mbox{\hyperlink{classLogEvent}{Log\+Event}}
+\item 
+class \mbox{\hyperlink{classLogEventWrap}{Log\+Event\+Wrap}}
+\item 
+class \mbox{\hyperlink{classLogFormatter}{Log\+Formatter}}
+\item 
+class \mbox{\hyperlink{classLogFormatter_1_1FormatItem}{Log\+Formatter\+::\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classLogAppender}{Log\+Appender}}
+\item 
+class \mbox{\hyperlink{classLogger}{Logger}}
+\item 
+class \mbox{\hyperlink{classStdoutLogAppender}{Stdout\+Log\+Appender}}
+\item 
+class \mbox{\hyperlink{classFileLogAppender}{File\+Log\+Appender}}
+\item 
+class \mbox{\hyperlink{classLoggerManager}{Logger\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,  level)
+\item 
+\#define \mbox{\hyperlink{log_8h_aa689601a9413bd4f1c41974694746f4e}{L\+O\+G\+\_\+\+D\+E\+B\+UG}}(logger)~\mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fa08e08c9e3eb556d6bbc9952a95282f9a}{Log\+Level\+::\+Level\+::\+D\+E\+B\+UG}})
+\item 
+\#define \mbox{\hyperlink{log_8h_abf8dce5b90852304a0897b44b9dfd038}{L\+O\+G\+\_\+\+I\+N\+FO}}(logger)~\mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665faf251bd279ea5f104225260eab21188d9}{Log\+Level\+::\+Level\+::\+I\+N\+FO}})
+\item 
+\#define \mbox{\hyperlink{log_8h_aba99aaf6c5a41efc2cdf6de1b5ab61c0}{L\+O\+G\+\_\+\+W\+A\+RN}}(logger)~\mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fac174e2df2dfe901a67346c19d6e83f9d}{Log\+Level\+::\+Level\+::\+W\+A\+RN}})
+\item 
+\#define \mbox{\hyperlink{log_8h_a80a932ee56f777358b3d82e5fa3203c8}{L\+O\+G\+\_\+\+E\+R\+R\+OR}}(logger)~\mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fa61b4605a5cd1b00233a4cd8a56c1a79b}{Log\+Level\+::\+Level\+::\+E\+R\+R\+OR}})
+\item 
+\#define \mbox{\hyperlink{log_8h_a983ab72109ed1168518f25e064114bdf}{L\+O\+G\+\_\+\+F\+A\+T\+AL}}(logger)~\mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665faebfd425bb02ebfaf0123d5f93cd7b660}{Log\+Level\+::\+Level\+::\+F\+A\+T\+AL}})
+\item 
+\#define \mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,  level,  fmt, ...)
+\item 
+\#define \mbox{\hyperlink{log_8h_a25557e23aae97c768e7948e56efd1c24}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+D\+E\+B\+UG}}(logger,  fmt, ...)~\mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fa08e08c9e3eb556d6bbc9952a95282f9a}{Log\+Level\+::\+Level\+::\+D\+E\+B\+UG}},fmt,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{log_8h_a13345958d7e48f1747ce849342ca33fe}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+I\+N\+FO}}(logger,  fmt, ...)~\mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665faf251bd279ea5f104225260eab21188d9}{Log\+Level\+::\+Level\+::\+I\+N\+FO}},fmt,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{log_8h_aa8fd3ed9a5100fa2a688926fd52b5ac2}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+W\+A\+RN}}(logger,  fmt, ...)~\mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fac174e2df2dfe901a67346c19d6e83f9d}{Log\+Level\+::\+Level\+::\+W\+A\+RN}},fmt,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{log_8h_a80d065c4d05757d23ed29b22f3ee6b4e}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+E\+R\+R\+OR}}(logger,  fmt, ...)~\mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fa61b4605a5cd1b00233a4cd8a56c1a79b}{Log\+Level\+::\+Level\+::\+E\+R\+R\+OR}},fmt,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{log_8h_afe094faff36abc149ca6fb0d2fa0dab5}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+F\+A\+T\+AL}}(logger,  fmt, ...)~\mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665faebfd425bb02ebfaf0123d5f93cd7b660}{Log\+Level\+::\+Level\+::\+F\+A\+T\+AL}},fmt,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{log_8h_acac80b4704e84229dd7656618273b1c3}{L\+O\+G\+\_\+\+R\+O\+OT}}()~\mbox{\hyperlink{classSake_1_1Singleton_a62a62bc275b26b4f25d5cd9d65f242a0}{Logger\+Mgr\+::\+Get\+Instance}}()-\/$>$get\+Root()
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classSake_1_1Singleton}{Sake\+::\+Singleton}}$<$ \mbox{\hyperlink{classLoggerManager}{Logger\+Manager}} $>$ \mbox{\hyperlink{log_8h_af73a11f811fa23bbbf1db986ca423d22}{Logger\+Mgr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{log_8h_aa689601a9413bd4f1c41974694746f4e}\label{log_8h_aa689601a9413bd4f1c41974694746f4e}} 
+\index{log.h@{log.h}!LOG\_DEBUG@{LOG\_DEBUG}}
+\index{LOG\_DEBUG@{LOG\_DEBUG}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_DEBUG}{LOG\_DEBUG}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+D\+E\+B\+UG(\begin{DoxyParamCaption}\item[{}]{logger }\end{DoxyParamCaption})~\mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fa08e08c9e3eb556d6bbc9952a95282f9a}{Log\+Level\+::\+Level\+::\+D\+E\+B\+UG}})}
+
+\mbox{\Hypertarget{log_8h_a80a932ee56f777358b3d82e5fa3203c8}\label{log_8h_a80a932ee56f777358b3d82e5fa3203c8}} 
+\index{log.h@{log.h}!LOG\_ERROR@{LOG\_ERROR}}
+\index{LOG\_ERROR@{LOG\_ERROR}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_ERROR}{LOG\_ERROR}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{logger }\end{DoxyParamCaption})~\mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fa61b4605a5cd1b00233a4cd8a56c1a79b}{Log\+Level\+::\+Level\+::\+E\+R\+R\+OR}})}
+
+\mbox{\Hypertarget{log_8h_a983ab72109ed1168518f25e064114bdf}\label{log_8h_a983ab72109ed1168518f25e064114bdf}} 
+\index{log.h@{log.h}!LOG\_FATAL@{LOG\_FATAL}}
+\index{LOG\_FATAL@{LOG\_FATAL}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_FATAL}{LOG\_FATAL}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+F\+A\+T\+AL(\begin{DoxyParamCaption}\item[{}]{logger }\end{DoxyParamCaption})~\mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665faebfd425bb02ebfaf0123d5f93cd7b660}{Log\+Level\+::\+Level\+::\+F\+A\+T\+AL}})}
+
+\mbox{\Hypertarget{log_8h_a25557e23aae97c768e7948e56efd1c24}\label{log_8h_a25557e23aae97c768e7948e56efd1c24}} 
+\index{log.h@{log.h}!LOG\_FMT\_DEBUG@{LOG\_FMT\_DEBUG}}
+\index{LOG\_FMT\_DEBUG@{LOG\_FMT\_DEBUG}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_FMT\_DEBUG}{LOG\_FMT\_DEBUG}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+D\+E\+B\+UG(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fa08e08c9e3eb556d6bbc9952a95282f9a}{Log\+Level\+::\+Level\+::\+D\+E\+B\+UG}},fmt,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{log_8h_a80d065c4d05757d23ed29b22f3ee6b4e}\label{log_8h_a80d065c4d05757d23ed29b22f3ee6b4e}} 
+\index{log.h@{log.h}!LOG\_FMT\_ERROR@{LOG\_FMT\_ERROR}}
+\index{LOG\_FMT\_ERROR@{LOG\_FMT\_ERROR}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_FMT\_ERROR}{LOG\_FMT\_ERROR}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fa61b4605a5cd1b00233a4cd8a56c1a79b}{Log\+Level\+::\+Level\+::\+E\+R\+R\+OR}},fmt,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{log_8h_afe094faff36abc149ca6fb0d2fa0dab5}\label{log_8h_afe094faff36abc149ca6fb0d2fa0dab5}} 
+\index{log.h@{log.h}!LOG\_FMT\_FATAL@{LOG\_FMT\_FATAL}}
+\index{LOG\_FMT\_FATAL@{LOG\_FMT\_FATAL}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_FMT\_FATAL}{LOG\_FMT\_FATAL}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+F\+A\+T\+AL(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665faebfd425bb02ebfaf0123d5f93cd7b660}{Log\+Level\+::\+Level\+::\+F\+A\+T\+AL}},fmt,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{log_8h_a13345958d7e48f1747ce849342ca33fe}\label{log_8h_a13345958d7e48f1747ce849342ca33fe}} 
+\index{log.h@{log.h}!LOG\_FMT\_INFO@{LOG\_FMT\_INFO}}
+\index{LOG\_FMT\_INFO@{LOG\_FMT\_INFO}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_FMT\_INFO}{LOG\_FMT\_INFO}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+I\+N\+FO(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665faf251bd279ea5f104225260eab21188d9}{Log\+Level\+::\+Level\+::\+I\+N\+FO}},fmt,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}\label{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}} 
+\index{log.h@{log.h}!LOG\_FMT\_LEVEL@{LOG\_FMT\_LEVEL}}
+\index{LOG\_FMT\_LEVEL@{LOG\_FMT\_LEVEL}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_FMT\_LEVEL}{LOG\_FMT\_LEVEL}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{level,  }\item[{}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}(logger-\/>getLevel() <= level) \(\backslash\)}
+\DoxyCodeLine{        LogEventWrap(\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{LogEvent::ptr}}(\textcolor{keyword}{new} \mbox{\hyperlink{classLogEvent}{LogEvent}}(logger,level,\_\_FILE\_\_,\_\_LINE\_\_,0,\(\backslash\)}
+\DoxyCodeLine{        \mbox{\hyperlink{namespaceSake_a4ca67a7668ade32c38d60d37a72b4910}{Sake::GetThreadId}}(),\mbox{\hyperlink{namespaceSake_a389c74ad2e156c1ca27817c8469b9bdf}{Sake::GetFiberId}}(),time(0)))).getEvent()-\/>format(fmt,\_\_VA\_ARGS\_\_)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{log_8h_aa8fd3ed9a5100fa2a688926fd52b5ac2}\label{log_8h_aa8fd3ed9a5100fa2a688926fd52b5ac2}} 
+\index{log.h@{log.h}!LOG\_FMT\_WARN@{LOG\_FMT\_WARN}}
+\index{LOG\_FMT\_WARN@{LOG\_FMT\_WARN}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_FMT\_WARN}{LOG\_FMT\_WARN}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+W\+A\+RN(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{log_8h_a45c8fa57d1366d6ce7e6286f76277d35}{L\+O\+G\+\_\+\+F\+M\+T\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fac174e2df2dfe901a67346c19d6e83f9d}{Log\+Level\+::\+Level\+::\+W\+A\+RN}},fmt,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{log_8h_abf8dce5b90852304a0897b44b9dfd038}\label{log_8h_abf8dce5b90852304a0897b44b9dfd038}} 
+\index{log.h@{log.h}!LOG\_INFO@{LOG\_INFO}}
+\index{LOG\_INFO@{LOG\_INFO}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_INFO}{LOG\_INFO}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+I\+N\+FO(\begin{DoxyParamCaption}\item[{}]{logger }\end{DoxyParamCaption})~\mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665faf251bd279ea5f104225260eab21188d9}{Log\+Level\+::\+Level\+::\+I\+N\+FO}})}
+
+\mbox{\Hypertarget{log_8h_a9fc1420050c579f1c0259ba5e5044d46}\label{log_8h_a9fc1420050c579f1c0259ba5e5044d46}} 
+\index{log.h@{log.h}!LOG\_LEVEL@{LOG\_LEVEL}}
+\index{LOG\_LEVEL@{LOG\_LEVEL}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_LEVEL}{LOG\_LEVEL}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+L\+E\+V\+EL(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{level }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}(logger-\/>getLevel() <= level) \(\backslash\)}
+\DoxyCodeLine{        LogEventWrap(\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{LogEvent::ptr}}(\textcolor{keyword}{new} \mbox{\hyperlink{classLogEvent}{LogEvent}}(logger,level,\_\_FILE\_\_,\_\_LINE\_\_,0,\mbox{\hyperlink{namespaceSake_a4ca67a7668ade32c38d60d37a72b4910}{Sake::GetThreadId}}(),\mbox{\hyperlink{namespaceSake_a389c74ad2e156c1ca27817c8469b9bdf}{Sake::GetFiberId}}(),time(0)))).getSS()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{log_8h_acac80b4704e84229dd7656618273b1c3}\label{log_8h_acac80b4704e84229dd7656618273b1c3}} 
+\index{log.h@{log.h}!LOG\_ROOT@{LOG\_ROOT}}
+\index{LOG\_ROOT@{LOG\_ROOT}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_ROOT}{LOG\_ROOT}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+R\+O\+OT(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{classSake_1_1Singleton_a62a62bc275b26b4f25d5cd9d65f242a0}{Logger\+Mgr\+::\+Get\+Instance}}()-\/$>$get\+Root()}
+
+\mbox{\Hypertarget{log_8h_aba99aaf6c5a41efc2cdf6de1b5ab61c0}\label{log_8h_aba99aaf6c5a41efc2cdf6de1b5ab61c0}} 
+\index{log.h@{log.h}!LOG\_WARN@{LOG\_WARN}}
+\index{LOG\_WARN@{LOG\_WARN}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LOG\_WARN}{LOG\_WARN}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+W\+A\+RN(\begin{DoxyParamCaption}\item[{}]{logger }\end{DoxyParamCaption})~\mbox{\hyperlink{log_8h_a9fc1420050c579f1c0259ba5e5044d46}{L\+O\+G\+\_\+\+L\+E\+V\+EL}}(logger,\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665fac174e2df2dfe901a67346c19d6e83f9d}{Log\+Level\+::\+Level\+::\+W\+A\+RN}})}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{log_8h_af73a11f811fa23bbbf1db986ca423d22}\label{log_8h_af73a11f811fa23bbbf1db986ca423d22}} 
+\index{log.h@{log.h}!LoggerMgr@{LoggerMgr}}
+\index{LoggerMgr@{LoggerMgr}!log.h@{log.h}}
+\doxysubsubsection{\texorpdfstring{LoggerMgr}{LoggerMgr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classSake_1_1Singleton}{Sake\+::\+Singleton}}$<$\mbox{\hyperlink{classLoggerManager}{Logger\+Manager}}$>$ \mbox{\hyperlink{log_8h_af73a11f811fa23bbbf1db986ca423d22}{Logger\+Mgr}}}
+

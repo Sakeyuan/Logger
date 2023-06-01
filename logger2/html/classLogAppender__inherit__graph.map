@@ -1,0 +1,5 @@
+<map id="LogAppender" name="LogAppender">
+<area shape="rect" id="node1" title=" " alt="" coords="99,5,242,171"/>
+<area shape="rect" id="node2" href="$classFileLogAppender.html" title=" " alt="" coords="5,219,160,325"/>
+<area shape="rect" id="node3" href="$classStdoutLogAppender.html" title=" " alt="" coords="184,233,333,311"/>
+</map>

@@ -1,0 +1,83 @@
+\hypertarget{log_8cpp}{}\doxysection{src/log.cpp File Reference}
+\label{log_8cpp}\index{src/log.cpp@{src/log.cpp}}
+{\ttfamily \#include \char`\"{}log.\+h\char`\"{}}\newline
+Include dependency graph for log.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{log_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMessageFormatItem}{Message\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classLevelFormatItem}{Level\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classElapseFormatItem}{Elapse\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classNameFormatItem}{Name\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classThreadIdFormatItem}{Thread\+Id\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classFiberIdFormatItem}{Fiber\+Id\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classDateTimeFormatItem}{Date\+Time\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classFileNameFormatItem}{File\+Name\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classLineFormatItem}{Line\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classNewLineFormatItem}{New\+Line\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classStringFormatItem}{String\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classTabFormatItem}{Tab\+Format\+Item}}
+\item 
+class \mbox{\hyperlink{classFiberFormatItem}{Fiber\+Format\+Item}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{log_8cpp_a05f4bdc8cf2b17d08f5f7870244e6124}{XX}}(name)
+\item 
+\#define \mbox{\hyperlink{log_8cpp_aa68af0d1ac82246bb0abd79186dda36f}{XX}}(str,  C)~\{\#str,\mbox{[}$\,$\mbox{]}(const std\+::string\& fmt)\{ return Format\+Item\+::ptr(new C(fmt));\}\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{log_8cpp_a02fd73d861ef2e4aabb38c0c9ff82947}{init}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{log_8cpp_a05f4bdc8cf2b17d08f5f7870244e6124}\label{log_8cpp_a05f4bdc8cf2b17d08f5f7870244e6124}} 
+\index{log.cpp@{log.cpp}!XX@{XX}}
+\index{XX@{XX}!log.cpp@{log.cpp}}
+\doxysubsubsection{\texorpdfstring{XX}{XX}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define XX(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{case} LogLevel::name:\(\backslash\)}
+\DoxyCodeLine{            return \#name;\(\backslash\)}
+\DoxyCodeLine{            break;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{log_8cpp_aa68af0d1ac82246bb0abd79186dda36f}\label{log_8cpp_aa68af0d1ac82246bb0abd79186dda36f}} 
+\index{log.cpp@{log.cpp}!XX@{XX}}
+\index{XX@{XX}!log.cpp@{log.cpp}}
+\doxysubsubsection{\texorpdfstring{XX}{XX}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define XX(\begin{DoxyParamCaption}\item[{}]{str,  }\item[{}]{C }\end{DoxyParamCaption})~\{\#str,\mbox{[}$\,$\mbox{]}(const std\+::string\& fmt)\{ return Format\+Item\+::ptr(new C(fmt));\}\}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{log_8cpp_a02fd73d861ef2e4aabb38c0c9ff82947}\label{log_8cpp_a02fd73d861ef2e4aabb38c0c9ff82947}} 
+\index{log.cpp@{log.cpp}!init@{init}}
+\index{init@{init}!log.cpp@{log.cpp}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

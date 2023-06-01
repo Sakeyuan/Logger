@@ -1,0 +1,149 @@
+\hypertarget{classLogEvent}{}\doxysection{Log\+Event Class Reference}
+\label{classLogEvent}\index{LogEvent@{LogEvent}}
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+
+
+Collaboration diagram for Log\+Event\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classLogEvent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogEvent}{Log\+Event}} $>$ \mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogEvent_abea7e51d47d4f8cf07aaa82336dbb6eb}{Log\+Event}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogger}{Logger}} $>$logger, \mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} level, const char $\ast$file, int32\+\_\+t line, uint64\+\_\+t elapse, uint32\+\_\+t thread\+\_\+id, uint32\+\_\+t fiber\+\_\+id, uint64\+\_\+t time)
+\item 
+const char $\ast$ \mbox{\hyperlink{classLogEvent_a1e7ab2af9b13cdab64d79a6c032801f4}{get\+File}} () const
+\item 
+int32\+\_\+t \mbox{\hyperlink{classLogEvent_aabf4ea51e373274f7abc7815d0cdb86e}{get\+Line}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classLogEvent_a89fcb3a34c4a8ca8f5d89d05b33571e4}{get\+Thread\+Id}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classLogEvent_ada7e3a64583ac0507992c41cb8d8940f}{get\+Fiber\+Id}} () const
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classLogEvent_a4057db97004200d368518a6989ec9a1e}{get\+Elapse}} () const
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classLogEvent_aa935d7fd15dfb1b9364357b058fc7e73}{get\+Time}} () const
+\item 
+std\+::string \mbox{\hyperlink{classLogEvent_ae821597f6cfc3563a6f68493df0f3515}{get\+Content}} () const
+\item 
+std\+::stringstream \& \mbox{\hyperlink{classLogEvent_a3a45ffa64976fb259e877fe2a76d87e1}{get\+SS}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogger}{Logger}} $>$ \mbox{\hyperlink{classLogEvent_a513aef5d0afc8958efcb1b310f63c3c6}{get\+Logger}} ()
+\item 
+\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} \mbox{\hyperlink{classLogEvent_ad1baddb9b83b61bd164e9b4083e0ac91}{get\+Level}} ()
+\item 
+void \mbox{\hyperlink{classLogEvent_adc41ea70ceb65cba7894dd1cc239f9ca}{format}} (const char $\ast$fmt,...)
+\item 
+void \mbox{\hyperlink{classLogEvent_a43c550b97781a4a8e469df4a1f0baf83}{format}} (const char $\ast$fmt, va\+\_\+list al)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classLogEvent_a32c4559720df357fc39c9e21d1963022}\label{classLogEvent_a32c4559720df357fc39c9e21d1963022}} 
+\index{LogEvent@{LogEvent}!ptr@{ptr}}
+\index{ptr@{ptr}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classLogEvent}{Log\+Event}}$>$ \mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogEvent_abea7e51d47d4f8cf07aaa82336dbb6eb}\label{classLogEvent_abea7e51d47d4f8cf07aaa82336dbb6eb}} 
+\index{LogEvent@{LogEvent}!LogEvent@{LogEvent}}
+\index{LogEvent@{LogEvent}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{LogEvent()}{LogEvent()}}
+{\footnotesize\ttfamily Log\+Event\+::\+Log\+Event (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogger}{Logger}} $>$}]{logger,  }\item[{\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}}}]{level,  }\item[{const char $\ast$}]{file,  }\item[{int32\+\_\+t}]{line,  }\item[{uint64\+\_\+t}]{elapse,  }\item[{uint32\+\_\+t}]{thread\+\_\+id,  }\item[{uint32\+\_\+t}]{fiber\+\_\+id,  }\item[{uint64\+\_\+t}]{time }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogEvent_a43c550b97781a4a8e469df4a1f0baf83}\label{classLogEvent_a43c550b97781a4a8e469df4a1f0baf83}} 
+\index{LogEvent@{LogEvent}!format@{format}}
+\index{format@{format}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Log\+Event\+::format (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{va\+\_\+list}]{al }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLogEvent_adc41ea70ceb65cba7894dd1cc239f9ca}\label{classLogEvent_adc41ea70ceb65cba7894dd1cc239f9ca}} 
+\index{LogEvent@{LogEvent}!format@{format}}
+\index{format@{format}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Log\+Event\+::format (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLogEvent_ae821597f6cfc3563a6f68493df0f3515}\label{classLogEvent_ae821597f6cfc3563a6f68493df0f3515}} 
+\index{LogEvent@{LogEvent}!getContent@{getContent}}
+\index{getContent@{getContent}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{getContent()}{getContent()}}
+{\footnotesize\ttfamily std\+::string Log\+Event\+::get\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogEvent_a4057db97004200d368518a6989ec9a1e}\label{classLogEvent_a4057db97004200d368518a6989ec9a1e}} 
+\index{LogEvent@{LogEvent}!getElapse@{getElapse}}
+\index{getElapse@{getElapse}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{getElapse()}{getElapse()}}
+{\footnotesize\ttfamily uint64\+\_\+t Log\+Event\+::get\+Elapse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogEvent_ada7e3a64583ac0507992c41cb8d8940f}\label{classLogEvent_ada7e3a64583ac0507992c41cb8d8940f}} 
+\index{LogEvent@{LogEvent}!getFiberId@{getFiberId}}
+\index{getFiberId@{getFiberId}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{getFiberId()}{getFiberId()}}
+{\footnotesize\ttfamily uint32\+\_\+t Log\+Event\+::get\+Fiber\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogEvent_a1e7ab2af9b13cdab64d79a6c032801f4}\label{classLogEvent_a1e7ab2af9b13cdab64d79a6c032801f4}} 
+\index{LogEvent@{LogEvent}!getFile@{getFile}}
+\index{getFile@{getFile}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{getFile()}{getFile()}}
+{\footnotesize\ttfamily const char$\ast$ Log\+Event\+::get\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogEvent_ad1baddb9b83b61bd164e9b4083e0ac91}\label{classLogEvent_ad1baddb9b83b61bd164e9b4083e0ac91}} 
+\index{LogEvent@{LogEvent}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} Log\+Event\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogEvent_aabf4ea51e373274f7abc7815d0cdb86e}\label{classLogEvent_aabf4ea51e373274f7abc7815d0cdb86e}} 
+\index{LogEvent@{LogEvent}!getLine@{getLine}}
+\index{getLine@{getLine}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{getLine()}{getLine()}}
+{\footnotesize\ttfamily int32\+\_\+t Log\+Event\+::get\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogEvent_a513aef5d0afc8958efcb1b310f63c3c6}\label{classLogEvent_a513aef5d0afc8958efcb1b310f63c3c6}} 
+\index{LogEvent@{LogEvent}!getLogger@{getLogger}}
+\index{getLogger@{getLogger}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{getLogger()}{getLogger()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classLogger}{Logger}}$>$ Log\+Event\+::get\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogEvent_a3a45ffa64976fb259e877fe2a76d87e1}\label{classLogEvent_a3a45ffa64976fb259e877fe2a76d87e1}} 
+\index{LogEvent@{LogEvent}!getSS@{getSS}}
+\index{getSS@{getSS}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{getSS()}{getSS()}}
+{\footnotesize\ttfamily std\+::stringstream\& Log\+Event\+::get\+SS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogEvent_a89fcb3a34c4a8ca8f5d89d05b33571e4}\label{classLogEvent_a89fcb3a34c4a8ca8f5d89d05b33571e4}} 
+\index{LogEvent@{LogEvent}!getThreadId@{getThreadId}}
+\index{getThreadId@{getThreadId}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{getThreadId()}{getThreadId()}}
+{\footnotesize\ttfamily uint32\+\_\+t Log\+Event\+::get\+Thread\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogEvent_aa935d7fd15dfb1b9364357b058fc7e73}\label{classLogEvent_aa935d7fd15dfb1b9364357b058fc7e73}} 
+\index{LogEvent@{LogEvent}!getTime@{getTime}}
+\index{getTime@{getTime}!LogEvent@{LogEvent}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily uint64\+\_\+t Log\+Event\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{log_8h}{log.\+h}}\item 
+src/\mbox{\hyperlink{log_8cpp}{log.\+cpp}}\end{DoxyCompactItemize}

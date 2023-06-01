@@ -1,7 +1,7 @@
 #pragma once
 #include <memory>
 namespace Sake{
-template<class T,class X = void,int N = 0>
+template<class T>
 class Singleton{
 public:
     static T* GetInstance(){
@@ -10,7 +10,7 @@ public:
     }
 };
 
-template<class T,class X = void,int N = 0>
+template<class T>
 class SingletonPtr{
 public:
     static std::shared_ptr<T> GetInstance(){

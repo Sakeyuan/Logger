@@ -1,0 +1,151 @@
+\hypertarget{classLogger}{}\doxysection{Logger Class Reference}
+\label{classLogger}\index{Logger@{Logger}}
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+
+
+Inheritance diagram for Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classLogger__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classLogger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogger}{Logger}} $>$ \mbox{\hyperlink{classLogger_aaac0e0a07f3db7385a6e0b99f8c331f7}{ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogger_a95cd95c3775c4b35886f57960c8fc971}{Logger}} (const std\+::string name=\char`\"{}root\char`\"{})
+\item 
+void \mbox{\hyperlink{classLogger_ae59fe738a31542808ca670a3b339bfe2}{log}} (\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} level, \mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}} event)
+\item 
+void \mbox{\hyperlink{classLogger_a3c4b70e2c6dcf704183cf806386a1a94}{debug}} (\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}} event)
+\item 
+void \mbox{\hyperlink{classLogger_a86bc36bec318d58ffde45d90c0cc3ea7}{info}} (\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}} event)
+\item 
+void \mbox{\hyperlink{classLogger_a9cb9bb3a054801264f468fc7961da3d2}{warn}} (\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}} event)
+\item 
+void \mbox{\hyperlink{classLogger_af434eb2b612a4cea809e4a62f0aad46b}{error}} (\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}} event)
+\item 
+void \mbox{\hyperlink{classLogger_ae29b19ae8bbb1e8c1d7b63ad701fd6c4}{fatal}} (\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}} event)
+\item 
+void \mbox{\hyperlink{classLogger_a024b6e3922ffdeabceec8321de7c05ab}{add\+Appender}} (\mbox{\hyperlink{classLogAppender_ab419fa61f5240ea0d3cdf4e0f97e03c0}{Log\+Appender\+::ptr}} appender)
+\item 
+void \mbox{\hyperlink{classLogger_a660fd4d917d4706e934b6e28a1dc5f11}{del\+Appender}} (\mbox{\hyperlink{classLogAppender_ab419fa61f5240ea0d3cdf4e0f97e03c0}{Log\+Appender\+::ptr}} appender)
+\item 
+\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} \mbox{\hyperlink{classLogger_aece6ef783673318ff63fe14a81221e37}{get\+Level}} () const
+\item 
+void \mbox{\hyperlink{classLogger_abd6b4f4e69115d28bd433fc4826bb9e2}{set\+Level}} (\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} level)
+\item 
+const std\+::string \& \mbox{\hyperlink{classLogger_a22c7aa857da7c9b58f30b21679a4b46f}{get\+Name}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classLogger_aaac0e0a07f3db7385a6e0b99f8c331f7}\label{classLogger_aaac0e0a07f3db7385a6e0b99f8c331f7}} 
+\index{Logger@{Logger}!ptr@{ptr}}
+\index{ptr@{ptr}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classLogger}{Logger}}$>$ \mbox{\hyperlink{classLogger_aaac0e0a07f3db7385a6e0b99f8c331f7}{Logger\+::ptr}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogger_a95cd95c3775c4b35886f57960c8fc971}\label{classLogger_a95cd95c3775c4b35886f57960c8fc971}} 
+\index{Logger@{Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily Logger\+::\+Logger (\begin{DoxyParamCaption}\item[{const std\+::string}]{name = {\ttfamily \char`\"{}root\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogger_a024b6e3922ffdeabceec8321de7c05ab}\label{classLogger_a024b6e3922ffdeabceec8321de7c05ab}} 
+\index{Logger@{Logger}!addAppender@{addAppender}}
+\index{addAppender@{addAppender}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{addAppender()}{addAppender()}}
+{\footnotesize\ttfamily void Logger\+::add\+Appender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogAppender_ab419fa61f5240ea0d3cdf4e0f97e03c0}{Log\+Appender\+::ptr}}}]{appender }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLogger_a3c4b70e2c6dcf704183cf806386a1a94}\label{classLogger_a3c4b70e2c6dcf704183cf806386a1a94}} 
+\index{Logger@{Logger}!debug@{debug}}
+\index{debug@{debug}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily void Logger\+::debug (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}}}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLogger_a660fd4d917d4706e934b6e28a1dc5f11}\label{classLogger_a660fd4d917d4706e934b6e28a1dc5f11}} 
+\index{Logger@{Logger}!delAppender@{delAppender}}
+\index{delAppender@{delAppender}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{delAppender()}{delAppender()}}
+{\footnotesize\ttfamily void Logger\+::del\+Appender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogAppender_ab419fa61f5240ea0d3cdf4e0f97e03c0}{Log\+Appender\+::ptr}}}]{appender }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLogger_af434eb2b612a4cea809e4a62f0aad46b}\label{classLogger_af434eb2b612a4cea809e4a62f0aad46b}} 
+\index{Logger@{Logger}!error@{error}}
+\index{error@{error}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily void Logger\+::error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}}}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLogger_ae29b19ae8bbb1e8c1d7b63ad701fd6c4}\label{classLogger_ae29b19ae8bbb1e8c1d7b63ad701fd6c4}} 
+\index{Logger@{Logger}!fatal@{fatal}}
+\index{fatal@{fatal}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{fatal()}{fatal()}}
+{\footnotesize\ttfamily void Logger\+::fatal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}}}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLogger_aece6ef783673318ff63fe14a81221e37}\label{classLogger_aece6ef783673318ff63fe14a81221e37}} 
+\index{Logger@{Logger}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} Logger\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogger_a22c7aa857da7c9b58f30b21679a4b46f}\label{classLogger_a22c7aa857da7c9b58f30b21679a4b46f}} 
+\index{Logger@{Logger}!getName@{getName}}
+\index{getName@{getName}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string\& Logger\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogger_a86bc36bec318d58ffde45d90c0cc3ea7}\label{classLogger_a86bc36bec318d58ffde45d90c0cc3ea7}} 
+\index{Logger@{Logger}!info@{info}}
+\index{info@{info}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily void Logger\+::info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}}}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLogger_ae59fe738a31542808ca670a3b339bfe2}\label{classLogger_ae59fe738a31542808ca670a3b339bfe2}} 
+\index{Logger@{Logger}!log@{log}}
+\index{log@{log}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Logger\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}}}]{level,  }\item[{\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}}}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLogger_abd6b4f4e69115d28bd433fc4826bb9e2}\label{classLogger_abd6b4f4e69115d28bd433fc4826bb9e2}} 
+\index{Logger@{Logger}!setLevel@{setLevel}}
+\index{setLevel@{setLevel}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{setLevel()}{setLevel()}}
+{\footnotesize\ttfamily void Logger\+::set\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLogger_a9cb9bb3a054801264f468fc7961da3d2}\label{classLogger_a9cb9bb3a054801264f468fc7961da3d2}} 
+\index{Logger@{Logger}!warn@{warn}}
+\index{warn@{warn}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{warn()}{warn()}}
+{\footnotesize\ttfamily void Logger\+::warn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}}}]{event }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{log_8h}{log.\+h}}\item 
+src/\mbox{\hyperlink{log_8cpp}{log.\+cpp}}\end{DoxyCompactItemize}

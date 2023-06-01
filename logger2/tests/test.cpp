@@ -11,9 +11,10 @@ int main(){
     LOG_DEBUG(logger)<<"test log";
     LOG_INFO(logger)<<"test log";
     LOG_FATAL(logger)<<"test log";
-    LOG_FMT_DEBUG(logger,"test %s","yjf");
+    
     auto l = LoggerMgr::GetInstance()->getLogger("xx");
-    LOG_INFO(logger)<<"XXX";
+    l->addAppender(FileLogAppender::ptr(new FileLogAppender("./log.txt")));
+    LOG_INFO(l)<<"yjf";
     std::cout << "hello log" << std::endl;
     return 0;
 }

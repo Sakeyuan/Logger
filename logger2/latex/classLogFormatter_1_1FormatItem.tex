@@ -1,0 +1,74 @@
+\hypertarget{classLogFormatter_1_1FormatItem}{}\doxysection{Log\+Formatter\+::Format\+Item Class Reference}
+\label{classLogFormatter_1_1FormatItem}\index{LogFormatter::FormatItem@{LogFormatter::FormatItem}}
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+
+
+Inheritance diagram for Log\+Formatter\+::Format\+Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLogFormatter_1_1FormatItem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Log\+Formatter\+::Format\+Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classLogFormatter_1_1FormatItem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogFormatter_1_1FormatItem}{Format\+Item}} $>$ \mbox{\hyperlink{classLogFormatter_1_1FormatItem_ad4b2acbe9cce288a59fd51969492c045}{ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classLogFormatter_1_1FormatItem_a1595c41d5879a6360ef3db06cb917949}{$\sim$\+Format\+Item}} ()
+\item 
+virtual void \mbox{\hyperlink{classLogFormatter_1_1FormatItem_a8138db4005665972e30e18b2bd7dae9c}{format}} (std\+::ostream \&os, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogger}{Logger}} $>$logger, \mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}} level, \mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}} event)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classLogFormatter_1_1FormatItem_ad4b2acbe9cce288a59fd51969492c045}\label{classLogFormatter_1_1FormatItem_ad4b2acbe9cce288a59fd51969492c045}} 
+\index{LogFormatter::FormatItem@{LogFormatter::FormatItem}!ptr@{ptr}}
+\index{ptr@{ptr}!LogFormatter::FormatItem@{LogFormatter::FormatItem}}
+\doxysubsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classLogFormatter_1_1FormatItem}{Format\+Item}}$>$ \mbox{\hyperlink{classLogFormatter_1_1FormatItem_ad4b2acbe9cce288a59fd51969492c045}{Log\+Formatter\+::\+Format\+Item\+::ptr}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogFormatter_1_1FormatItem_a1595c41d5879a6360ef3db06cb917949}\label{classLogFormatter_1_1FormatItem_a1595c41d5879a6360ef3db06cb917949}} 
+\index{LogFormatter::FormatItem@{LogFormatter::FormatItem}!````~FormatItem@{$\sim$FormatItem}}
+\index{````~FormatItem@{$\sim$FormatItem}!LogFormatter::FormatItem@{LogFormatter::FormatItem}}
+\doxysubsubsection{\texorpdfstring{$\sim$FormatItem()}{~FormatItem()}}
+{\footnotesize\ttfamily virtual Log\+Formatter\+::\+Format\+Item\+::$\sim$\+Format\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogFormatter_1_1FormatItem_a8138db4005665972e30e18b2bd7dae9c}\label{classLogFormatter_1_1FormatItem_a8138db4005665972e30e18b2bd7dae9c}} 
+\index{LogFormatter::FormatItem@{LogFormatter::FormatItem}!format@{format}}
+\index{format@{format}!LogFormatter::FormatItem@{LogFormatter::FormatItem}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily virtual void Log\+Formatter\+::\+Format\+Item\+::format (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLogger}{Logger}} $>$}]{logger,  }\item[{\mbox{\hyperlink{classLogLevel_ab0a9f32f9109f1bfc782310ab529665f}{Log\+Level\+::\+Level}}}]{level,  }\item[{\mbox{\hyperlink{classLogEvent_a32c4559720df357fc39c9e21d1963022}{Log\+Event\+::ptr}}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classFiberFormatItem_a7742e09d944f12371f5ab9ee208030ed}{Fiber\+Format\+Item}}, \mbox{\hyperlink{classTabFormatItem_a17c11ab8771f94323fa05374adcc81b7}{Tab\+Format\+Item}}, \mbox{\hyperlink{classStringFormatItem_a3ec5f7857819755a22df16c16dc23fea}{String\+Format\+Item}}, \mbox{\hyperlink{classNewLineFormatItem_a439dec4743eb69fad2b34b937f62d10e}{New\+Line\+Format\+Item}}, \mbox{\hyperlink{classLineFormatItem_a9adf36bfa03d6c283ebf1ef728e868f0}{Line\+Format\+Item}}, \mbox{\hyperlink{classFileNameFormatItem_a8f11bc0eb85b2a70e919fe27713d0830}{File\+Name\+Format\+Item}}, \mbox{\hyperlink{classDateTimeFormatItem_adeff749894cfbba8c753d2b084809281}{Date\+Time\+Format\+Item}}, \mbox{\hyperlink{classFiberIdFormatItem_a0961b3ea44ce564218c6e41077fe658f}{Fiber\+Id\+Format\+Item}}, \mbox{\hyperlink{classThreadIdFormatItem_af25da45414112ed4e9bf2b76f16fdf4f}{Thread\+Id\+Format\+Item}}, \mbox{\hyperlink{classNameFormatItem_a9bdb047cb1023d07dbfc71b6a61036e9}{Name\+Format\+Item}}, \mbox{\hyperlink{classElapseFormatItem_a8630081c3e6285e3aee9debb6c3ac5b8}{Elapse\+Format\+Item}}, \mbox{\hyperlink{classLevelFormatItem_ab04772a55dce74616e3821e797c6e0f9}{Level\+Format\+Item}}, and \mbox{\hyperlink{classMessageFormatItem_a9db97b6f8da391f451aa56b0cffa6f32}{Message\+Format\+Item}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{log_8h}{log.\+h}}\end{DoxyCompactItemize}
